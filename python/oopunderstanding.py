@@ -62,35 +62,39 @@
     # Ease out
 
 # Constructor & Destroctor (Done)
-# Overloading & Overriding
-# Generaization & Specialization
+# Overloading & Overriding (Done)
+# Generaization & Specialization (Done)
 # Methods & Functions (Done)
 # Attributes (Done)
-# Getter Setter
-# Abstract class
-# Instance Variable
+# Getter & Setter (Done)
+# Abstract class (Done)
+# Instance Variable (Done)
 
-# Relationships
-# Association
-# Composition
-# Aggrigation
+# Relationships = Association (Done)
+# 1) Composition
+# 2) Aggrigation
 
+# Naming conventions
+# Pascal = JahanzebNaeem
+# Camel = jahanzebNaeem
+# Snake = jahanzeb_naeem
+# Kabab = jahanzeb-naeem
 
 # mylist = [1,2,3]
 # mylist.append(4)
-# print(mylist)
+# print(type(5))
 
 # class Sample():
 #     pass
 #
-# x = Sample()
+# x = Sample() # Opject creation
 # print(type(x))
 
 # class Dog():
 #
-    # def __init__(self):
-    #     pass
-
+#     def __init__(self):
+#         pass
+#
 #
 # mydog = Dog()
 # print(type(mydog))
@@ -100,6 +104,7 @@
 #     def __init__(self, breed):
 #         self.breed = breed
 #
+# # mydog = Dog()
 # mydog = Dog(breed = "Lab")
 # otherdog = Dog(breed="Huskie")
 # print(mydog.breed)
@@ -118,7 +123,7 @@
 
 # class Dog():
 #
-#     # CLASS OBHECT ATTRIBUTE
+#     # CLASS OBJECT ATTRIBUTE
 #     species = "mammal"
 #
 #     def __init__(self, breed, name):
@@ -130,25 +135,25 @@
 # print(mydog.name)
 # print(mydog.species)
 
-# class Circle():
-#
-#     pi = 3.140
-#
-#     def __init__(self,radius=1):
-#         self.radius = radius
-#
-#     def area(self):
-#         return self.radius*self.radius*Circle.pi
-#
-#     def set_radius(self,new_radius):
-#         self.radius = new_radius
-#
-# myc = Circle(3)
-# # # # print(myc.radius)
-# # # print(myc.area)
-# # myc.radius = 100
-# myc.set_radius(999)
+class Circle():
+
+    pi = 3.140
+
+    def __init__(self,radius=1):
+        self.radius = radius
+
+    def area(self):
+        return self.radius*self.radius*Circle.pi
+
+    def set_radius(self,new_radius):
+        self.radius = new_radius
+
+myc = Circle()
+# # # print(myc.radius)
 # print(myc.area())
+# myc.radius = 100
+myc.set_radius(999)
+print(myc.area())
 
 # INHERITANCE
 # class Animal():
