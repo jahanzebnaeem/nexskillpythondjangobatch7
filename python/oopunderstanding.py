@@ -135,25 +135,25 @@
 # print(mydog.name)
 # print(mydog.species)
 
-class Circle():
-
-    pi = 3.140
-
-    def __init__(self,radius=1):
-        self.radius = radius
-
-    def area(self):
-        return self.radius*self.radius*Circle.pi
-
-    def set_radius(self,new_radius):
-        self.radius = new_radius
-
-myc = Circle()
-# # # print(myc.radius)
+# class Circle():
+#
+#     pi = 3.140
+#
+#     def __init__(self,radius=1):
+#         self.radius = radius
+#
+#     def area(self):
+#         return self.radius*self.radius*Circle.pi
+#
+#     def set_radius(self,new_radius):
+#         self.radius = new_radius
+#
+# myc = Circle(3)
+# # print(myc.radius)
+# # print(myc.area())
+# # myc.radius = 100
+# myc.set_radius(999)
 # print(myc.area())
-# myc.radius = 100
-myc.set_radius(999)
-print(myc.area())
 
 # INHERITANCE
 # class Animal():
@@ -179,38 +179,43 @@ print(myc.area())
 #     def eat(self):
 #         print("DOG EATING")
 #
+# class Huskey(Dog):
+#     def __init__(self):
+#         print("Huskey Dog")
 #
-# # mya = Anima()
+# # mya = Animal()
 # # mya.whoAmI()
 # # mya.eat()
-# mydog = Dog()
-# mydog.whoAmI()
-# mydog.eat()
-# mydog.bark()
+# # mydog = Dog()
+# # mydog.whoAmI()
+# # mydog.eat()
+# # mydog.bark()
+# myHuskey = Huskey()
+# myHuskey.eat()
 
 # SPECIAL METHODS
 # mylist = [1,2,3]
 # print(mylist)
-
+#
 # len([1,2,3])
 
-# class Book():
-#     def __init__(self, title, author, pages):
-#         self.title = title
-#         self.author = author
-#         self.pages = pages
-#
-#     def __str__(self):
-#         return "Title : {}, Author: {}, Page: {}".format(self.title, self.author, self.pages)
-#
-#     def __len__(self):
-#         return self.pages
-#
-#     def __del__(self):
-#         print("a book is destroyed")
-#
-#
-# b = Book("Python", "Jahanzeb", 200)
-# # print(b)
-# # print(len(b))
-# del b
+class Book():
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+    def __str__(self):
+        return "Title : {}, Author: {}, Page: {}".format(self.title, self.author, self.pages)
+
+    def __len__(self):
+        return self.pages
+
+    def __del__(self):
+        print("a book is destroyed")
+
+
+b = Book("Python", "Jahanzeb", 200)
+# print(b)
+# print(len(b))
+del b
