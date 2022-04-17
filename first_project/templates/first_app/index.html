@@ -3,11 +3,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>New page</title>
+    <title>Topic List</title>
     <link rel="stylesheet" href="{% static "css/style.css" %}">
   </head>
   <body>
     <h1>Welcome to today's lecture</h1>
-    <img src="{% static "images/jahanzeb.png" %}" alt="Jahanzeb Image">
+
+    {% if topic_title %}
+    <table>
+      <th>Topic Name</th>
+      {% for topic in topic_title %}
+        <tr>
+          <td>{{ topic.top_name }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+      <p>No topic exist</p>
+    {% endif %}
+
   </body>
 </html>
